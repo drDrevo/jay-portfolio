@@ -725,9 +725,9 @@ export default function Portfolio() {
                 <Reveal delay={400}>
                   <div className="mt-8 flex flex-wrap items-center gap-3">
                     <a href={PROFILE.links.email} className="btn-primary inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm"><Mail size={16} /> Get in touch</a>
-                    <a href={PROFILE.links.resume} className="btn-ghost inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm"><FileText size={16} /> Resume</a>
-                    <a href={PROFILE.links.github} className="icon-link p-2"><GithubIcon size={20} /></a>
-                    <a href={PROFILE.links.linkedin} className="icon-link p-2"><LinkedinIcon size={20} /></a>
+                  <a href={PROFILE.links.resume} target="_blank" rel="noopener noreferrer" className="btn-ghost inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm"><FileText size={16} /> Resume</a>
+                  <a href={PROFILE.links.github} target="_blank" rel="noopener noreferrer" className="icon-link p-2"><GithubIcon size={20} /></a>
+                  <a href={PROFILE.links.linkedin} target="_blank" rel="noopener noreferrer" className="icon-link p-2"><LinkedinIcon size={20} /></a>
                   </div>
                 </Reveal>
               </div>
@@ -879,7 +879,7 @@ export default function Portfolio() {
               <p className="mt-3 max-w-lg mx-auto" style={{ color: THEME.muted }}>Whether it's systems support today or ML work down the line — if it's interesting, I want to hear about it.</p>
               <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
                 <a href={PROFILE.links.email} className="btn-primary inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm"><Mail size={16} /> Email me <ArrowUpRight size={15} /></a>
-                <a href={PROFILE.links.linkedin} className="btn-ghost inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm"><LinkedinIcon size={16} /> LinkedIn</a>
+                <a href={PROFILE.links.linkedin} target="_blank" rel="noopener noreferrer" className="btn-ghost inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm"><LinkedinIcon size={16} /> LinkedIn</a>
               </div>
             </div>
           </Reveal>
@@ -914,7 +914,7 @@ interface ProjectCardProps { p: Project; big?: boolean; }
 function ProjectCard({ p, big = false }: ProjectCardProps) {
   const Icon = p.icon;
   return (
-    <a href={p.link} className="card p-6 block h-full">
+      <a href={p.link} target="_blank" rel="noopener noreferrer" className="card p-6 block h-full">
       <div className="flex items-start justify-between">
         <div className="rounded-xl p-2.5" style={{ background: "rgba(19,19,30,0.6)", border: `1px solid ${THEME.border}` }}>
           <Icon size={big ? 24 : 20} style={{ color: A }} />
