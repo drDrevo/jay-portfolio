@@ -52,7 +52,7 @@ const PROFILE = {
     email: "mailto:igohiljay@gmail.com",
     linkedin: "https://www.linkedin.com/in/gohiljay/",
     github: "https://github.com/drDrevo",
-    resume: "#",
+    resume: "/JayGohilResume.pdf",
   },
 };
 
@@ -590,6 +590,9 @@ export default function Portfolio() {
       style={{ color: THEME.text, minHeight: "100vh", position: "relative", background: "transparent", "--accent": baseA, "--accent2": baseB, "--chapter": 0 } as CSSProperties}>
       <style>{`
         * { box-sizing: border-box; }
+        html, body { margin: 0; background: ${THEME.bg}; }
+        html { overscroll-behavior: none; }
+        body { overscroll-behavior: none; }
         @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
         @keyframes shimmer { 0%{background-position:0% 50%} 100%{background-position:200% 50%} }
         .gtext { background:linear-gradient(90deg, var(--accent), var(--accent2), var(--accent));
