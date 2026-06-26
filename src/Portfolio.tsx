@@ -49,9 +49,9 @@ const PROFILE = {
     "5+ years turning messy enterprise IT into reliable, automated systems — Microsoft 365, hybrid Active Directory, endpoint management. Now building toward Machine Learning & AI engineering, one shipped project at a time.",
   location: "Kingston, ON · Canada",
   links: {
-    email: "mailto:you@example.com",
-    linkedin: "https://linkedin.com/in/your-handle",
-    github: "https://github.com/your-handle",
+    email: "mailto:igohiljay@gmail.com",
+    linkedin: "https://www.linkedin.com/in/gohiljay/",
+    github: "https://github.com/drDrevo",
     resume: "#",
   },
 };
@@ -438,7 +438,7 @@ const N = SECTIONS.length;
 export default function Portfolio() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("about");
-  const [themeMode, setThemeMode] = useState<number | "auto">(0);
+  const [themeMode, setThemeMode] = useState<number | "auto">("auto");
   const [themeOpen, setThemeOpen] = useState(false);
   const [reduced, setReduced] = useState<boolean>(
     () => typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches
